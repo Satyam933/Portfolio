@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Satyam Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    const pointerGlow = document.createElement('div');
+    pointerGlow.style.position = 'fixed';
+    pointerGlow.style.width = '100px';
+    pointerGlow.style.height = '100px';
+    pointerGlow.style.borderRadius = '50%';
+    pointerGlow.style.pointerEvents = 'none';
+    pointerGlow.style.background = 'radial-gradient(circle, #0ff 0%, transparent 60%)';
+    pointerGlow.style.mixBlendMode = 'screen';
+    pointerGlow.style.zIndex = '9999';
+    pointerGlow.style.transition = 'transform 0.05s linear';
+    document.body.appendChild(pointerGlow);
+
+    document.addEventListener('mousemove', (e) => {
+        pointerGlow.style.transform = `translate(${e.clientX - 50}px, ${e.clientY - 50}px)`;
+    });
+</script>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="left">SATYAM PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <h2>Hello! I'm Satyam Kumar</h2>
+                <p>A curious mind constantly exploring the ever-evolving world of technology.
+                    As a Computer Science and Engineering student at Chandigarh University,
+                    I thrive on turning complex problems into elegant solutions. With a passion
+                    for innovation and programming, I’m building the foundation for a career where
+                    creativity meets technology to shape the future.</p>
+            </div>
+            <div class="rightsection">
+                <img src="image.jpg" alt="Satyam Kumar" />
+            </div>
+        </section>
+
+        <section class="socialwork">
+            <h2>My Creative Work</h2>
+            <p>Beyond tech, I share content on Instagram and YouTube—check it out below!</p>
+            <div class="social-links">
+                <div class="instagram">
+                    <h3>
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon"
+                            class="icon">
+                        Instagram
+                    </h3>
+                    <p>Follow for tech reels, Information, News & Unboxing content.</p>
+                    <a href="https://www.instagram.com/inu_junction/profilecard/?igsh=cTVxZGJtMzZ3dmlt"
+                        target="_blank">Visit Instagram</a>
+                </div>
+                <div class="youtube">
+                    <h3>
+                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube Icon"
+                            class="icon">
+                        YouTube
+                    </h3>
+                    <p>I post Information, News & Unboxing videos regularly.</p>
+                    <a href="https://youtube.com/@inu_junction?si=ECCNhPZvh79Licwr" target="_blank">Visit YouTube</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> © satyamportfolio.com | All rights reserved</p>
+    </footer>
+</body>
+
+</html>
