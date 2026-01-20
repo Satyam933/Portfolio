@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Satyam Kumar | Student at Chandigarh University</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Desktop Nav -->
+    <nav id="desktop-nav">
+      <div class="logo">Satyam Kumar</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button
+        class="theme-toggle"
+        aria-label="Toggle dark mode"
+        title="Toggle theme"
+      >
+        🌙
+      </button>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <nav id="hamburger-nav">
+      <div class="logo">Satyam Kumar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <button
+        class="theme-toggle mobile"
+        aria-label="Toggle dark mode"
+        title="Toggle theme"
+      >
+        🌙
+      </button>
+    </nav>
+
+    <!-- Profile -->
+    <section id="profile" data-reveal="up">
+      <div class="section__pic-container">
+        <img
+          src="./assets/professional-pic.jpg"
+          alt="Satyam Kumar profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Satyam</h1>
+        <p class="section__text__p2">Student at Chandigarh University</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn"
+            class="icon"
+            onclick="
+              location.href =
+                'https://www.linkedin.com/in/satyam-kumar-36839329a/'
+            "
+          />
+          <img
+            src="./assets/github.png"
+            alt="GitHub"
+            class="icon"
+            onclick="location.href = 'https://github.com/Satyam933'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" data-reveal="up">
+      <h1 class="title">About Me</h1>
+
+      <!-- MOBILE-FRIENDLY STACK (no overlap) -->
+      <div class="section-container about-stack">
+        <div class="section__pic-container about-media">
+          <img
+            id="abtImg"
+            src="./assets/about-pic.JPG"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Pursuing BE-CSE<br />CHandigarh University</p>
+            </div>
+          </div>
+
+          <div class="text-container">
+            <p>
+              I'm Satyam Kumar, student at Chandigarh University, working on SDE
+              and ML. I enjoy building web applications and understanding how
+              technologies integrate. I’m seeking opportunities to contribute to
+              real-world projects, enhance my development skills, and grow
+              professionally.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href = './#skills'"
+      />
+    </section>
+
+    <!-- Skills-->
+    <section id="skills" data-reveal="up">
+      <!-- <p class="section__text__p1">Explore My</p> -->
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Languages -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://img.icons8.com/fluency/48/java-coffee-cup-logo.png"
+                  alt="java"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://img.icons8.com/color/48/javascript--v1.png"
+                  alt="javascript"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://img.icons8.com/color/48/c-plus-plus-logo.png"
+                  alt="c++"
+                />
+                <div>
+                  <h3>C / C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://img.icons8.com/color/48/python.png"
+                  alt="python"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Frameworks -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frameworks</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://img.icons8.com/office/40/react.png"
+                  alt="React"
+                />
+                <div>
+                  <h3>React.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://img.icons8.com/color/48/spring-logo.png"
+                  alt="Spring-Boot"
+                />
+                <div>
+                  <h3>Spring Boot</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://img.icons8.com/ios-filled/50/api-settings.png"
+                  alt="api-settings"
+                />
+                <div>
+                  <h3>REST APIs</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://img.icons8.com/color/48/redux.png"
+                  alt="redux"
+                />
+                <div>
+                  <h3>Redux</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tools & Platforms</h2>
+            <div class="article-container">
+              <article>
+                <img src="https://img.icons8.com/color/48/git.png" alt="git" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://img.icons8.com/ios-filled/50/github.png"
+                  alt="github"
+                />
+                <div>
+                  <h3>GitHub Actions (CI/CD)</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://img.icons8.com/bubbles/100/netlify.png"
+                  alt="netlify"
+                />
+                <div>
+                  <h3>Netlify</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="https://img.icons8.com/color/48/firebase.png"
+                  alt="firebase"
+                />
+                <div>
+                  <h3>Firebase</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://img.icons8.com/color/48/amazon-web-services.png"
+                  alt="aws"
+                />
+                <div>
+                  <h3>AWS (S3, RDS, EC2)</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Databases</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://img.icons8.com/external-tal-revivo-green-tal-revivo/36/external-postgre-sql-a-free-and-open-source-relational-database-management-system-logo-green-tal-revivo.png"
+                  alt="postgresql"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://img.icons8.com/external-those-icons-flat-those-icons/24/external-MySQL-programming-and-development-those-icons-flat-those-icons.png"
+                  alt="mysql"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href = './#projects'"
+        />
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" data-reveal="up">
+      <!-- <p class="section__text__p1">Browse My Recent</p> -->
+      <h1 class="title">Projects</h1>
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/calci.png"
+                alt="Select Sports"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Calculator using HTML, CSS & JS
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  location.href = 'https://github.com/Satyam933/Calculator'
+                "
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://calcisj.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/myntra.png"
+                alt="myntra-image"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Myntra Frontend</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://github.com/Satyam933/Myntra-Clone/tree/main'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  location.href = 'https://mynclon.netlify.app/'
+                "
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href = './#contact'"
+      />
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" data-reveal="up">
+      <!-- <p class="section__text__p1">Get in Touch</p> -->
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:Satyamkumar811450@gmail.com">Gmail</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/satyam-kumar-36839329a/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Last updated: <span id="last-updated">JAN 20-2026</span></p>
+      <p>All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
