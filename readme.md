@@ -7,7 +7,7 @@ This portfolio highlights my skills, experience, and projects while providing an
 
 ## 🚀 Live Demo
 
-👉 [Visit Portfolio](https://saurabh-codes.onrender.com/)
+👉 [Visit Portfolio](https://sjportfoliodev.netlify.app/)
 
 ## 🧩 Features
 
